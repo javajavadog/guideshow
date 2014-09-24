@@ -5,6 +5,8 @@ A lot of Android applications include a brief introduction guide pages before us
 
 This project could let you easy and fast build the introduction guide pages.
 
+keywords: welcome guide wizard introduction openning start first launch
+
 
 Dependent
 ---------
