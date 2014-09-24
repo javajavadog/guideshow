@@ -7,6 +7,7 @@ This project could let you easy and fast build the introduction guide pages.
 
 
 dependent:
+=========
 android-support-v4.jar (you could get it from android sdk)
 
 min-sdk-version:
@@ -23,3 +24,7 @@ How to use
 You need create your own activity extends from GuideActivity and implement the abstract method.
 
 Just check the ExampleGuideActivity.java for example.
+
+Screenshots
+=========
+![github](http://github.com/unicorn.png "github")  
