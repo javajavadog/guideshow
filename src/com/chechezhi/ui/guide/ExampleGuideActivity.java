@@ -31,10 +31,26 @@ public class ExampleGuideActivity extends GuideActivity{
 
         SinglePage page03 = new SinglePage();
         page03.mBackground = getResources().getDrawable(R.drawable.bg_page_03);
+        SingleElement e05 = new SingleElement(-100, 2000, 100, 100, 1.0f, 1.0f, BitmapFactory.decodeResource(getResources(), R.drawable.ic_stuff));
+        SingleElement e06 = new SingleElement(100, 2000, 300, 120, 1.0f, 1.0f, BitmapFactory.decodeResource(getResources(), R.drawable.ic_stuff));
+        SingleElement e07 = new SingleElement(200, 2000, 600, 140, 1.0f, 1.0f, BitmapFactory.decodeResource(getResources(), R.drawable.ic_stuff));
+        SingleElement e08 = new SingleElement(300, 2000, 900, 160, 1.0f, 1.0f, BitmapFactory.decodeResource(getResources(), R.drawable.ic_stuff));
+        page03.mElementsList.add(e05);
+        page03.mElementsList.add(e06);
+        page03.mElementsList.add(e07);
+        page03.mElementsList.add(e08);
         guideContent.add(page03);
 
         SinglePage page04 = new SinglePage();
         page04.mBackground = getResources().getDrawable(R.drawable.bg_page_04);
+        SingleElement e09 = new SingleElement(100, 100, 3000, 3000, 1.0f, 1.0f, BitmapFactory.decodeResource(getResources(), R.drawable.ic_stuff));
+        SingleElement e10 = new SingleElement(300, 120, 3000, 3000, 1.0f, 1.0f, BitmapFactory.decodeResource(getResources(), R.drawable.ic_stuff));
+        SingleElement e11 = new SingleElement(600, 140, 3000, 3000, 1.0f, 1.0f, BitmapFactory.decodeResource(getResources(), R.drawable.ic_stuff));
+        SingleElement e12 = new SingleElement(900, 160, 3000, 3000, 1.0f, 1.0f, BitmapFactory.decodeResource(getResources(), R.drawable.ic_stuff));
+        page04.mElementsList.add(e09);
+        page04.mElementsList.add(e10);
+        page04.mElementsList.add(e11);
+        page04.mElementsList.add(e12);
         guideContent.add(page04);
 
         SinglePage page05 = new SinglePage();
