@@ -6,7 +6,7 @@ A lot of Android applications include a brief introduction guide pages before us
 This project could let you easy and fast build the introduction guide pages.
 
 
-dependent:
+Dependent:
 =========
 android-support-v4.jar (you could get it from android sdk)
 
@@ -27,4 +27,8 @@ Just check the ExampleGuideActivity.java for example.
 
 Screenshots
 =========
-![github](http://github.com/unicorn.png "github")  
+![github](https://github.com/javajavadog/guideshow/blob/master/assets/screenshots/Screenshot_2014-09-25-00-10-27.png "github")  
+![github](https://github.com/javajavadog/guideshow/blob/master/assets/screenshots/Screenshot_2014-09-25-00-10-35.png "github")  
+![github](https://github.com/javajavadog/guideshow/blob/master/assets/screenshots/Screenshot_2014-09-25-00-10-41.png "github")  
+![github](https://github.com/javajavadog/guideshow/blob/master/assets/screenshots/Screenshot_2014-09-25-00-10-54.png "github")  
+![github](https://github.com/javajavadog/guideshow/blob/master/assets/screenshots/Screenshot_2014-09-25-00-11-02.png "github")  
