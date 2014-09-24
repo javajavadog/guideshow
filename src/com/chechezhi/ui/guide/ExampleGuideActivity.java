@@ -57,4 +57,9 @@ public class ExampleGuideActivity extends GuideActivity{
     boolean drawDot() {
         return true;
     }
+    
+    public void entryApp(){
+        // Time to entry your app! We just finish the activity, replace it with your code.
+        finish();
+    }
 }
