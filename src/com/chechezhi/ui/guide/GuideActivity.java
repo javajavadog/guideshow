@@ -28,7 +28,7 @@ public abstract class GuideActivity extends FragmentActivity {
         FragmentPagerAdapter adapter = new FragmentTabAdapter(this, guideContent);
         mPager.setAdapter(adapter);
 
-        mGuideView = new GuideView(this, guideContent, drawDot());
+        mGuideView = new GuideView(this, guideContent, drawDot(), dotDefault(), dotSelected());
         mPager.setOnPageChangeListener(mGuideView);
 
         FrameLayout container = (FrameLayout) findViewById(R.id.guide_container);

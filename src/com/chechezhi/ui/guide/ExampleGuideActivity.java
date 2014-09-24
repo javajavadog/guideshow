@@ -38,7 +38,7 @@ public class ExampleGuideActivity extends GuideActivity{
         guideContent.add(page04);
 
         SinglePage page05 = new SinglePage();
-        page05.mBackground = getResources().getDrawable(R.drawable.bg_page_05);
+        page05.mCustomFragment = new EntryFragment();
         guideContent.add(page05);
         return guideContent;
     }
