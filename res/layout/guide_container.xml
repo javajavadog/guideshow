@@ -8,13 +8,5 @@
         android:id="@+id/guide_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-    
-    <ImageView
-        android:id="@+id/navigation_dot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|bottom"
-        android:layout_marginBottom="35dp"
-        android:visibility="invisible"/>
 
 </FrameLayout>
