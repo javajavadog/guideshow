@@ -6,10 +6,10 @@ import java.util.List;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
-public class ExampleGuideActivity extends GuideActivity{
+public class ExampleGuideActivity extends AbsGuideActivity{
     
     @Override
-    List<SinglePage> buildGuideContent() {
+    public List<SinglePage> buildGuideContent() {
         // prepare the information for our guide
         List<SinglePage> guideContent = new ArrayList<SinglePage>();
 
@@ -60,17 +60,17 @@ public class ExampleGuideActivity extends GuideActivity{
     }
 
     @Override
-    Bitmap dotDefault() {
+    public Bitmap dotDefault() {
         return BitmapFactory.decodeResource(getResources(), R.drawable.ic_dot_default);
     }
 
     @Override
-    Bitmap dotSelected() {
+    public Bitmap dotSelected() {
         return BitmapFactory.decodeResource(getResources(), R.drawable.ic_dot_selected);
     }
 
     @Override
-    boolean drawDot() {
+    public boolean drawDot() {
         return true;
     }
     

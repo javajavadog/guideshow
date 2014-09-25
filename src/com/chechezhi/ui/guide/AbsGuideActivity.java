@@ -10,7 +10,7 @@ import android.support.v4.view.ViewPager;
 import android.widget.FrameLayout;
 import android.widget.FrameLayout.LayoutParams;
 
-public abstract class GuideActivity extends FragmentActivity {
+public abstract class AbsGuideActivity extends FragmentActivity {
     private ViewPager mPager;
     private GuideView mGuideView;
 
@@ -36,11 +36,11 @@ public abstract class GuideActivity extends FragmentActivity {
                 FrameLayout.LayoutParams.MATCH_PARENT));
     }
 
-    abstract List<SinglePage> buildGuideContent();
+    abstract public List<SinglePage> buildGuideContent();
     
-    abstract boolean drawDot();
+    abstract public boolean drawDot();
     
-    abstract Bitmap dotDefault();
+    abstract public Bitmap dotDefault();
     
-    abstract Bitmap dotSelected();
+    abstract public Bitmap dotSelected();
 }
