@@ -29,9 +29,6 @@ Just check the ExampleGuideActivity.java for example.
 
 Screenshots
 ---------
-![github](https://github.com/javajavadog/guideshow/blob/master/screenshots/1.png "github")  
-![github](https://github.com/javajavadog/guideshow/blob/master/screenshots/2.png "github")  
-![github](https://github.com/javajavadog/guideshow/blob/master/screenshots/3.png "github")  
-![github](https://github.com/javajavadog/guideshow/blob/master/screenshots/4.png "github")  
-![github](https://github.com/javajavadog/guideshow/blob/master/screenshots/5.png "github")  
+![github](https://github.com/javajavadog/guideshow/blob/master/screenshots/peek.png "github")  
+
 
