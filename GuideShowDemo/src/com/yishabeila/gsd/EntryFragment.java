@@ -1,4 +1,4 @@
-package com.chechezhi.ui.guide;
+package com.yishabeila.gsd;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

@@ -43,8 +43,8 @@ public class GuideView extends View implements OnPageChangeListener {
         mGuideContent = guideContent;
         mDrawDot = drawDot;
 
-        // Prepare dot element
-        if (guideContent != null && guideContent.size() > 0 && drawDot) {
+        // Prepare dot element, if we have only one page, do not show dot
+        if (guideContent != null && guideContent.size() > 1 && drawDot) {
             mDotList = new ArrayList<SingleElement>();
 
             // Just get a rough screen width/height

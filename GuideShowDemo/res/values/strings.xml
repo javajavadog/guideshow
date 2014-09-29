@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">GuideShowDemo</string>
+    <string name="welcome">This activity is just a luncher, to fully demo the guide show.\n\nYou need create you own Activity extends from AbsGuideActivity and your own List&lt;SinglePage&gt;\n\nYou could use either the guideshowlib.jar or source code as you wish. :)</string>
+    <string name="entry">Entry</string>
+
 </resources>

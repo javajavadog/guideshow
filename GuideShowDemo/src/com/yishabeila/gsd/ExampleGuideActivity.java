@@ -1,10 +1,14 @@
-package com.chechezhi.ui.guide;
+package com.yishabeila.gsd;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+
+import com.chechezhi.ui.guide.AbsGuideActivity;
+import com.chechezhi.ui.guide.SingleElement;
+import com.chechezhi.ui.guide.SinglePage;
 
 public class ExampleGuideActivity extends AbsGuideActivity{
     
