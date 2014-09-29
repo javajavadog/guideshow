@@ -7,12 +7,11 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.FrameLayout.LayoutParams;
 
 public abstract class AbsGuideActivity extends FragmentActivity {
-    private ViewPager mPager;
-    private GuideView mGuideView;
 
     /** Called when the activity is first created. */
     @Override
@@ -21,26 +20,38 @@ public abstract class AbsGuideActivity extends FragmentActivity {
 
         List<SinglePage> guideContent = buildGuideContent();
 
+        if (guideContent == null) {
+            // nothing to show
+            return;
+        }
+
         // prepare views
-        setContentView(R.layout.guide_container);
-        mPager = (ViewPager) findViewById(R.id.guide_pager);
+        FrameLayout container = new FrameLayout(this);
+        ViewPager pager = new ViewPager(this);
+        pager.setId(getPagerId());
+
+        container.addView(pager, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
+
+        setContentView(container);
 
         FragmentPagerAdapter adapter = new FragmentTabAdapter(this, guideContent);
-        mPager.setAdapter(adapter);
+        pager.setAdapter(adapter);
 
-        mGuideView = new GuideView(this, guideContent, drawDot(), dotDefault(), dotSelected());
-        mPager.setOnPageChangeListener(mGuideView);
+        GuideView guideView = new GuideView(this, guideContent, drawDot(), dotDefault(), dotSelected());
+        pager.setOnPageChangeListener(guideView);
 
-        FrameLayout container = (FrameLayout) findViewById(R.id.guide_container);
-        container.addView(mGuideView, new LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
+        container.addView(guideView, new LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
                 FrameLayout.LayoutParams.MATCH_PARENT));
     }
 
     abstract public List<SinglePage> buildGuideContent();
-    
+
     abstract public boolean drawDot();
-    
+
     abstract public Bitmap dotDefault();
-    
+
     abstract public Bitmap dotSelected();
+
+    abstract public int getPagerId();
 }

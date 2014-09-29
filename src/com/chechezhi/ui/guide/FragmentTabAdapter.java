@@ -27,12 +27,18 @@ public class FragmentTabAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        if (mGuideContent.get(position).mCustomFragment != null) {
+        // Get a local reference
+        SinglePage sp = mGuideContent.get(position);
+        
+        if (sp.mCustomFragment != null) {
             // This single page has custom fragment, use it
-            return mGuideContent.get(position).mCustomFragment;
+            return sp.mCustomFragment;
         } else {
             PageFragment pageFragment = (PageFragment) Fragment.instantiate(mCtx, PageFragment.class.getName());
-            pageFragment.setBg(mGuideContent.get(position).mBackground);
+            
+            if (sp.mBackground != null) {
+                pageFragment.setBg(sp.mBackground);
+            }
             return pageFragment;
         }
     }
@@ -49,7 +55,9 @@ public class FragmentTabAdapter extends FragmentPagerAdapter {
         @Override
         public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
             ImageView iv = new ImageView(getActivity());
-            iv.setBackground(mBg);
+            if (mBg != null) {
+                iv.setBackground(mBg);
+            }
             return iv;
         }
 

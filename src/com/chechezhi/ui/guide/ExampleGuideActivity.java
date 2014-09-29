@@ -78,4 +78,9 @@ public class ExampleGuideActivity extends AbsGuideActivity{
         // Time to entry your app! We just finish the activity, replace it with your code.
         finish();
     }
+
+    @Override
+    public int getPagerId() {
+        return R.id.guide_container;
+    }
 }
